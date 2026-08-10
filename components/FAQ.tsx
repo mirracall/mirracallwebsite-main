@@ -1,0 +1,2 @@
+import { faqs } from "@/data/product";
+export function FAQ() { return <section className="faq-section section" id="faq"><div className="container faq-grid"><div><p className="eyebrow">FAQ</p><h2>Questions?</h2><p>What we know now—and what is still being defined.</p></div><div className="accordion">{faqs.map(([question, answer], i) => <details key={question} open={i===0}><summary><span>{question}</span><i aria-hidden="true"></i></summary><div className="answer"><p>{answer}</p></div></details>)}</div></div></section>; }

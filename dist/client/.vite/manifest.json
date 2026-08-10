@@ -1,0 +1,60 @@
+{
+  "_framework-DjPHiq1u.js": {
+    "file": "assets/framework-DjPHiq1u.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js"
+    ]
+  },
+  "_rolldown-runtime-S-ySWqyJ.js": {
+    "file": "assets/rolldown-runtime-S-ySWqyJ.js",
+    "name": "rolldown-runtime"
+  },
+  "components/Navbar.tsx": {
+    "file": "assets/Navbar-BaAmIXoX.js",
+    "name": "Navbar",
+    "src": "components/Navbar.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "components/Waitlist.tsx": {
+    "file": "assets/Waitlist-CgqEm5gz.js",
+    "name": "Waitlist",
+    "src": "components/Waitlist.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "assets/layout-segment-context-Bccbc90u.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "assets/index-DIFUt7ht.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-DjPHiq1u.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
+      "virtual:vinext-app-browser-entry",
+      "components/Waitlist.tsx",
+      "components/Navbar.tsx"
+    ]
+  }
+}
