@@ -11,9 +11,9 @@ function StepVisual({ mode }: { mode: string }) {
       ) : mode === 'tracking' ? (
         <img src={`${basePath}/images/move-naturally.gif`} alt="Move naturally" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       ) : mode === 'feedback' ? (
-        <img src={`${basePath}/images/get-feedback.jpg`} alt="Get feedback as you move" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img src={`${basePath}/images/get-feedback.png`} alt="Get feedback as you move" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       ) : mode === 'progress' ? (
-        <img src={`${basePath}/images/progress.jpg`} alt="Understand your progress" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img src={`${basePath}/images/progress.png`} alt="Understand your progress" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       ) : (
         <div className="mini-mirror">
           <div className="mini-person"><i></i><b></b></div>
