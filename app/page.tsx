@@ -7,6 +7,9 @@ import { ProductMirror } from "@/components/ProductMirror";
 import { Waitlist } from "@/components/Waitlist";
 import { news, specs } from "@/data/product";
 
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/mirracallwebsite-main" : "";
+
 export default function Home() {
   return (
     <>
@@ -54,7 +57,7 @@ export default function Home() {
         </section>
 
         <section className="news-section section" id="news">
-          <div className="container"><p className="eyebrow">News &amp; features</p><h2>Mirra Call in motion.</h2><div className="news-grid">{news.map((item) => <a key={item.title} href={item.href} target="_blank" rel="noopener noreferrer" className="news-item"><div className="news-art" style={item.image ? { background: '#fff' } : undefined}>{item.image ? <img src={item.image} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> : <span>{item.mark}</span>}</div><p>{item.type} · {item.date}</p><h3>{item.title}</h3><span className="text-link">Read feature ↗</span></a>)}</div></div>
+          <div className="container"><p className="eyebrow">News &amp; features</p><h2>Mirra Call in motion.</h2><div className="news-grid">{news.map((item) => <a key={item.title} href={item.href} target="_blank" rel="noopener noreferrer" className="news-item"><div className="news-art" style={item.image ? { background: '#fff' } : undefined}>{item.image ? <img src={`${basePath}${item.image}`} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> : <span>{item.mark}</span>}</div><p>{item.type} · {item.date}</p><h3>{item.title}</h3><span className="text-link">Read feature ↗</span></a>)}</div></div>
         </section>
 
         <section className="specs-section section" id="specifications">
