@@ -10,10 +10,11 @@ function StepVisual({ mode }: { mode: string }) {
         <img src={`${basePath}/images/start-session.gif`} alt="Start your session" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       ) : mode === 'tracking' ? (
         <img src={`${basePath}/images/move-naturally.gif`} alt="Move naturally" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      ) : mode === 'feedback' ? (
+        <img src={`${basePath}/images/get-feedback.jpg`} alt="Get feedback as you move" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       ) : (
         <div className="mini-mirror">
           <div className="mini-person"><i></i><b></b></div>
-          {mode === 'feedback' && <span className="correction">Move slowly →</span>}
           {mode === 'progress' && <div className="progress-bars"><i></i><i></i><i></i><i></i></div>}
         </div>
       )}
