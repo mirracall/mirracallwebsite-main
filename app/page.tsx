@@ -41,7 +41,7 @@ export default function Home() {
               ))}
             </div>
             <div className="edge-grid">
-              <div className="edge-visual" aria-hidden="true"><ProductMirror compact /></div>
+              <div className="edge-visual" aria-hidden="true"><img src={`${basePath}/images/edge-ai.jpg`} alt="Edge AI Vision Processing" style={{ width: '100%', height: 'auto', borderRadius: '12px' }} /></div>
               <div className="edge-copy"><p className="eyebrow light">Edge AI</p><h3>Designed to think locally.</h3><p>Mirra Call is being designed around edge computing, allowing movement analysis to happen close to the person using the device rather than depending entirely on a remote cloud service.</p><dl><div><dt>Vision</dt><dd>Pose estimation and movement tracking</dd></div><div><dt>Compute</dt><dd>NVIDIA hardware</dd></div><div><dt>Coaching</dt><dd>Real-time visual and auditory feedback and guidance</dd></div></dl></div>
             </div>
           </div>
